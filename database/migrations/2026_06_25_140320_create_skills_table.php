@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('skills', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('category')->nullable(); // contoh: Frontend, Backend, Tools
-            $table->string('icon')->nullable(); // path/url icon atau class icon (misal fontawesome)
+            $table->string('category')->nullable(); 
+            $table->string('icon')->nullable();
             $table->timestamps();
         });
     }
