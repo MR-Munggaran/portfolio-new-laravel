@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description')->nullable();
-            $table->string('tech_stack')->nullable(); // contoh: "Laravel, Tailwind, MySQL" (comma separated)
-            $table->string('image')->nullable(); // thumbnail project
+            $table->string('tech_stack')->nullable();
+            $table->string('image')->nullable();
             $table->string('demo_url')->nullable();
-            $table->string('repo_url')->nullable(); // link github
+            $table->string('repo_url')->nullable(); 
             $table->timestamps();
         });
     }
